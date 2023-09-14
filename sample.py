@@ -11,7 +11,7 @@ def hello(name):
 
 @app.route('/')
 def index():
-    return "index"
+    return render_template('hello.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
